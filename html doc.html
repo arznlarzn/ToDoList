@@ -1,0 +1,50 @@
+<!DOCTYPE html>	<!--Every HTML document needs the !DOCTYPE at the top.-->
+<html lang="en"> <!--I am going to assume this is best practice.-->
+<head>
+    <meta charset="UTF-8">
+    <!--UTF 8 is widely used character encoding that represents nearly all characters in human languages-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- This meta tag, X-UA-Compatible, ensures that the webpage is rendered using the latest rendering engine available, especially in Internet Explorer.-->
+    <!--The 'content' part saying 'IE=edge' forces use of the most up-to-date rendering engine -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--The viewport is the area of the user's visible area of a web page. "Width=device-width" makes the page match the width of the users device, making the page responsive.-->
+    <!--The initial-scale set's the initial zoom level. ^^ -->
+    <title>To-Do List</title>
+    <!--This is what will be displayed in the browser tab window.-->
+    <link rel="stylesheet" href="main.css">
+    <!--The link to the CSS file. -->
+    <script src="main.js" defer></script> <!-- THE DEFER PART OF SOURCING THIS JS FILE is what ensures that the script is executed only AFTER the HTML file is completely parsed. -->
+    <!--The link to the JavaScript file. -->
+
+
+    <!--These are connecting to google for fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <h1>To Do List, Buddies!!</h1>
+    <div class="container">
+        <label for="itemToDo">Add items:</label>
+        <input type="text" id="itemToDo" name="itemToDo" size="40" minlength="2" placeholder="what were you just gonna write here?">
+        <div class="buttons">
+            <button id="add">Add Item</button>
+            <button id="delete">Delete Item</button>
+            <button id="complete">Complete Item</button>
+        </div>
+    </div>
+
+    <div class="lists">
+        <div id="itemsList">Items on your To-Do List</div>
+        <div id="completedList">Completed Items</div>
+    </div>
+
+
+    <script src="ToDoJS.js" defer></script>
+</body>
+<footer>
+    <div class="removeButton">
+        <button id="remove">Remove from completed list?</button>
+    </div>
+</footer>
+</html>

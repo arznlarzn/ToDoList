@@ -1,0 +1,82 @@
+* {
+    font-family: 'Rubik', 'Arial Narrow', Arial, sans-serif;
+    font-style: bold;
+    margin: 1em;
+}
+
+.container, .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+}
+
+.removeButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .5em;
+}
+
+.lists {
+    display: flex;
+    justify-content: space-around;
+    font-size: large;
+}
+
+
+h1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+label {
+    display: flex;
+    justify-content: space-around;
+    font-size: 2em;
+}
+
+label, h1 {
+    color : purple;
+}
+
+
+
+h1 {
+    text-align: center;
+    background: grey;
+    padding: 0px;
+    border: 0px;
+}
+
+button {
+    font-size: 2em;
+}
+
+.lists  {
+    font-size: 1em;
+}
+
+.lists li {
+    font-size: 1em;
+}
+
+#add {
+    color: burlywood;
+}
+
+#delete {
+    color: red;
+}
+
+#itemToDo {
+    font-size: 1em;
+}
+
+#complete {
+    color: green;
+}
+
+#completedList li {
+    text-decoration: line-through;
+}
